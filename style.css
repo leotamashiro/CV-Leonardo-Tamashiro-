@@ -60,12 +60,33 @@ body {
     text-decoration: none;
   }
   
-  .iconos a {
-    margin-right: 15px;
-    display: inline-block;
-    margin-top: 15px;
-    color: #ecf0f1;
-  }
+  .iconos a img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.iconos a img:hover {
+  transform: scale(1.2);
+}
+
+.iconos a {
+  color: #ecf0f1; /* ya lo tenés así, mantiene el color claro */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* espacio entre icono y texto si lo hay */
+}
+
+.iconos a:hover {
+  color: #2ecc71; /* verde brillante en hover para el enlace */
+}
   
   section.about {
     background: #ffffff;
@@ -175,8 +196,8 @@ body {
 
   /* === EXP LABORAL === */
   #experiencia {
-    padding: 60px 20px;
-    background-color: #ffffff;
+    padding: 31px 20px;
+    background-color: #f2f2f2;
     color: #333;
   }
   
@@ -188,7 +209,12 @@ body {
   }
   
   .job {
-    margin-bottom: 40px;
+    margin-bottom: 63px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    align-items: center;
+    padding: 15px;
   }
   
   .job h3 {
@@ -208,6 +234,17 @@ body {
     padding-left: 20px;
     line-height: 1.6;
   }
+
+  /* Zoom solo para elementos de experiencia laboral */
+.job {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
   
   /* === EDUCACION === */
   #educacion {
