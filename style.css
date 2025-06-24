@@ -249,6 +249,69 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   }
   
+  /* === Cursos === */
+  #cursos {
+  padding: 60px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#cursos h2 {
+  font-size: 2rem;
+  color: #1e2a38;
+  margin-bottom: 40px;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.curso-card {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.curso-card img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.curso-info {
+  text-align: left;
+}
+
+.curso-info .fecha {
+  color: #1abc9c;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.curso-info h3 {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.curso-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
   
   
   
